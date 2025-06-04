@@ -26,7 +26,7 @@ function App() {
       <h1>Dictionary App</h1>
       <br />
       <form onSubmit={(e)=>handleClick(e)}>
-      <input placeholder='Search for a word...' type="text" required style={{ width: 300, height: 40 }} value={word} onChange={(e) => {setWord(e.target.value); if(e.target.value===""){setMeaning('')}}} />
+      <input placeholder='Search for a word...' type="text" style={{ width: 300, height: 40 }} value={word} onChange={(e) => setWord(e.target.value)} />
       <button type='submit' style={{ height: 43, marginLeft:1 }}>Search</button>
       </form>
       <div style={{ marginTop: 0, padding : 0 }}>
